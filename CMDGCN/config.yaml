@@ -1,0 +1,329 @@
+NIST:
+  seed: 38888
+  learning_rate: 0.0005
+  learning_rate2: 0.0005
+  num_hidden: 128
+  num_proj_hidden: 128
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 300
+  weight_decay: 0.00001
+
+  se_loss_reg1: 0.5
+  se_loss_reg2: 0.5
+  se_epochs: 60
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 80
+  cluster_loss_reg: 0.001
+  cluster_epochs: 1000
+  num_cl_hidden: 128
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.001
+
+
+
+
+
+spambase:
+  seed: 39788
+  learning_rate: 0.001
+  learning_rate2: 0.001
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg1: 0.5
+  se_loss_reg2: 0.1
+  se_epochs: 25
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 300
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.001
+
+CNAE:
+  seed: 38888
+  learning_rate: 0.001
+  learning_rate2: 0.001
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg1: 0.5
+  se_loss_reg2: 0.001
+  se_epochs: 25
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 600
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.001
+
+REJAFADA:
+  seed: 38888
+  learning_rate: 0.001
+  learning_rate2: 0.001
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg1: 1
+  se_loss_reg2: 0.5
+  se_epochs: 25
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 1000
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.001
+
+TUANDROMD:
+  seed: 39788
+  learning_rate: 0.001
+  learning_rate2: 0.0005
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg1: 0.001
+  se_loss_reg2: 1
+  se_epochs: 25
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 200
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.1
+
+
+TTC:
+  seed: 38888
+  learning_rate: 0.0005
+  learning_rate2: 0.0005
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 300
+  weight_decay: 0.00001
+
+  se_loss_reg1: 1
+  se_loss_reg2: 0.1
+  se_epochs: 40
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 1500
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.1
+
+Cora:
+  #GRACE Configs
+  seed: 38888
+  learning_rate: 0.0005
+  learning_rate2: 0.0005
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.5
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  #SE-GNN Configs
+  se_loss_reg1: 0.5
+  se_loss_reg2: 0.5
+  se_epochs: 100
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 60
+  cluster_loss_reg: 0.001
+  cluster_epochs: 1000
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.1
+
+CiteSeer:
+  seed: 39788
+  learning_rate: 0.0005
+  learning_rate2: 0.0005
+  num_hidden: 512
+  num_proj_hidden: 512
+  activation: 'prelu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.9
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg1: 12
+  se_loss_reg2: 0
+  se_epochs: 100
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 400
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 1
+
+PubMed:
+  seed: 23344
+  learning_rate: 0.001
+  learning_rate2: 0.0005
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.4
+  drop_edge_rate_2: 0.1
+  drop_feature_rate_1: 0.0
+  drop_feature_rate_2: 0.2
+  tau: 0.7
+  num_epochs: 1500
+  weight_decay: 0.00001
+
+  se_loss_reg1: 2
+  se_loss_reg2: 1
+  se_epochs: 80
+  batch_size: 2000
+  iterations: 6
+  threshold: 0.06
+  normalize: False
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 600
+  num_cl_hidden: 256
+  dropout: 0.1
+  se_lr: 0.001
+  final_loss_reg: 0.1
+
+
+Wiki:
+  seed: 39788
+  learning_rate: 0.0005
+  learning_rate2: 0.001
+  num_hidden: 384
+  num_proj_hidden: 384
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg1: 1
+  se_loss_reg2: 0.5
+  se_epochs: 25
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 500
+  num_cl_hidden: 384
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 1
+
+
