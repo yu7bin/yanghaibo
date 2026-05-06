@@ -1,0 +1,331 @@
+dblp:
+  #GRACE Configs
+  seed: 38888
+  learning_rate: 0.0005
+  learning_rate2: 0.001
+  num_hidden: 128
+  num_proj_hidden: 128
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.7
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  #SE-GNN Configs
+  se_loss_reg: 10
+  se_epochs: 100
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 300
+  num_cl_hidden: 128
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.001
+
+
+
+
+wisconsin:
+  #GRACE Configs
+  seed: 38888
+  learning_rate: 0.001
+  learning_rate2: 0.0005
+  num_hidden: 128
+  num_proj_hidden: 128
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0
+  drop_feature_rate_2: 0
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  #SE-GNN Configs
+  se_loss_reg: 2
+  se_epochs: 100
+  batch_size: 0
+  iterations: 1
+  threshold: 0.4
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 200
+  num_cl_hidden: 128
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.01
+
+
+NIST:
+  seed: 38888
+  learning_rate: 0.0005
+  learning_rate2: 0.001
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.1
+  drop_feature_rate_2: 0.2
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg: 1
+  se_epochs: 60
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 60
+  cluster_loss_reg: 0.001
+  cluster_epochs: 2000
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.0001
+
+
+
+
+
+spambase:
+  seed: 38888
+  learning_rate: 0.001
+  learning_rate2: 0.001
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg: 1
+  se_epochs: 50
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 200
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.1
+
+CNAE:
+  seed: 38888
+  learning_rate: 0.001
+  learning_rate2: 0.001
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg: 1
+  se_epochs: 25
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 2000
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.0001
+
+REJAFADA:
+  seed: 38888
+  learning_rate: 0.001
+  learning_rate2: 0.0005
+  num_hidden: 384
+  num_proj_hidden: 384
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg: 1
+  se_epochs: 40
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 60
+  cluster_loss_reg: 0.001
+  cluster_epochs: 1000
+  num_cl_hidden: 384
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.01
+
+
+
+
+TTC:
+  seed: 38888
+  learning_rate: 0.0005
+  learning_rate2: 0.001
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg: 1
+  se_epochs: 40
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 60
+  cluster_loss_reg: 0.001
+  cluster_epochs: 3000
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.001
+
+Cora:
+  #GRACE Configs
+  seed: 38888
+  learning_rate: 0.0005
+  learning_rate2: 0.001
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'prelu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  #SE-GNN Configs
+  se_loss_reg: 1
+  se_epochs: 100
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0.001
+  cluster_epochs: 2000
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.001
+
+CiteSeer:
+  seed: 39788
+  learning_rate: 0.001
+  learning_rate2: 0.0005
+  num_hidden: 384
+  num_proj_hidden: 384
+  activation: 'prelu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.9
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg: 12
+  se_epochs: 100
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 40
+  cluster_loss_reg: 0
+  cluster_epochs: 600
+  num_cl_hidden: 384
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.1
+
+
+
+
+Wiki:
+  seed: 39788
+  learning_rate: 0.001
+  learning_rate2: 0.001
+  num_hidden: 256
+  num_proj_hidden: 256
+  activation: 'relu'
+  base_model: 'GCNConv'
+  num_layers: 1
+  drop_edge_rate_1: 0.2
+  drop_edge_rate_2: 0.4
+  drop_feature_rate_1: 0.3
+  drop_feature_rate_2: 0.4
+  tau: 0.4
+  num_epochs: 200
+  weight_decay: 0.00001
+
+  se_loss_reg: 1
+  se_epochs: 25
+  batch_size: 0
+  iterations: 1
+  threshold: 0.5
+  normalize: True
+  patience: 100
+  cluster_loss_reg: 0.001
+  cluster_epochs: 2000
+  num_cl_hidden: 256
+  dropout: 0
+  se_lr: 0.001
+  final_loss_reg: 0.1
+
+
